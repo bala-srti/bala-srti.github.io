@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bala srti</title>
+    <link rel='stylesheet' type='text/css' href='https://cdn-dev.securiti.xyz/consent/cookie-consent.css' />
 </head>
 <body>
     <h1>Srti</h1>
@@ -25,6 +26,20 @@
         Nam euismod, est at egestas elementum, est nisi dapibus sem, ut suscipit augue nibh sed tortor. Sed sodales tincidunt dui vitae interdum. Curabitur dapibus a dolor ac faucibus. Etiam laoreet erat vel consectetur semper. Pellentesque dictum nunc sit amet risus faucibus porttitor. Fusce dictum justo vitae neque varius sollicitudin. Nullam tempor accumsan ornare. Suspendisse ultrices est pulvinar ligula pharetra, vel sollicitudin diam tristique. Fusce hendrerit nisi eget mi venenatis cursus. Nullam pharetra vitae dolor in porta. Proin eu justo nulla. Etiam vulputate risus vel libero elementum, eget eleifend ex porta.
     </p>
 </body>
+    <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+<script>
+(function () {
+	var s = document.createElement('script');
+	s.src = 'https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk.js';
+	s.setAttribute('data-tenant-uuid', '6d53cd7f-0697-40e1-a98a-c66aa6d2e970');
+	s.setAttribute('data-domain-uuid', 'c4d5100e-c21f-4849-9581-eb4967f82d34');
+	s.setAttribute('data-backend-url', 'https://dev.securiti.xyz');
+	s.defer = true;
+	var parent_node = document.head || document.body;
+	parent_node.appendChild(s);
+	s.addEventListener('load', function() { window.initCmp(); });
+})()
+</script>
 <script>
     console.log('js enabled')
 </script>
