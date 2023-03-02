@@ -33,6 +33,7 @@
     <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
 <script>
 (function () {
+	window.__privaciConsentFailover = true
 	var s = document.createElement('script');
 	s.src = 'https://cdn-qa.securiti.xyz/consent/cookie-consent-sdk.js';
 	s.setAttribute('data-tenant-uuid', '743ec7af-00b1-41bb-8f25-9eda3bfdb74c');
