@@ -14,6 +14,21 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 </head>
+	
+<script src='https://cdn-dev.securiti.xyz/consent/form-consent-sdk.js'></script>
+<script>
+	window.addEventListener('load',
+	FormConsentSDK.initialize({
+	    codeGenMetadata:{"formPropertyId":"3","formSelector":"[name*=\"form\"]","subjectIdentifiers":[{"name":"email","selector":"[name = \"email\"]","isPrimary":true},{"name":"username","selector":"[name = \"username\"]","isPrimary":false},{"name":"password","selector":"[name = \"password\"]","isPrimary":false}],"consentIdentifiers":[{"type":"NoUIElement","name":"DefaultElementId","selector":"DefaultElementSelector","propertyId":907,"consentValue":"DefaultConsentValue"}],"consentTrigger":{"action":"submit","selector":""}},
+	    url: 'https://dev.securiti.xyz/privaci/v1/',
+	    authToken:'71979c3e-39ed-4743-b77b-949b0c800fe8',
+	    orgId:'1',
+	    onConsentSuccess: null,
+	    onConsentFailure: null
+	})
+	)
+</script>
+                    
 
 <body>
     <h1>dev Srti</h1>
