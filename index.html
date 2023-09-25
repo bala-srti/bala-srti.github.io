@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src 'self' 'unsafe-inline' dev.securiti.xyz cdn-dev.securiti.xyz code.jquery.com; script-src 'self' 'unsafe-inline' dev.securiti.xyz cdn-dev.securiti.xyz code.jquery.com"> -->
+    <META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src 'self' 'unsafe-inline' dev.securiti.xyz cdn-dev.securiti.xyz code.jquery.com; script-src 'self' 'unsafe-inline' dev.securiti.xyz cdn-dev.securiti.xyz code.jquery.com">
     <title>Bala srti dev</title>
-    <link rel='stylesheet' type='text/css' href='https://cdn-qa-stage.securiti.xyz/consent/cookie-consent.css' />
-<!--     <script type="text/javascript" src="https://cdn-dev.securiti.xyz/consent/auto_blocking/6d53cd7f-0697-40e1-a98a-c66aa6d2e970/c4d5100e-c21f-4849-9581-eb4967f82d34.js"></script> -->
+    <link rel='stylesheet' type='text/css' href='https://cdn-dev.securiti.xyz/consent/cookie-consent.css' />
+    <script type="text/javascript" src="https://cdn-dev.securiti.xyz/consent/auto_blocking/6d53cd7f-0697-40e1-a98a-c66aa6d2e970/c4d5100e-c21f-4849-9581-eb4967f82d34.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
-</head>             
+</head>
+
 <body>
     <h1>dev Srti</h1>
     <p>
@@ -59,39 +60,21 @@
         tristique. Fusce hendrerit nisi eget mi venenatis cursus. Nullam pharetra vitae dolor in porta. Proin eu justo
         nulla. Etiam vulputate risus vel libero elementum, eget eleifend ex porta.
     </p>
-    <form name="form">
-	<p>
-            <label>Email : <input name="email" type="text" /></label>
-        </p>
-	    <p>
-            <label>First Name : <input name="first-name" type="text" /></label>
-        </p>
-	    <p>
-            <label>Last Name : <input name="last-name" type="text" /></label>
-        </p>
-	<input type="checkbox" id="check1" name="check1">
-	<label for="check1"> Accept</label><br>
+    <form>
         <p>
-            <button name="btn" type="button">Submit</button>
+            <label>Username : <input type="text" /></label>
+        </p>
+        <p>
+            <label>Password : <input type="password" /></label>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
         </p>
     </form>
-    <script src='https://cdn-qa-stage.securiti.xyz/consent/form-consent-sdk.js'></script>
-    <script>
-    window.addEventListener('load',
-	FormConsentSDK.initialize({
-	    codeGenMetadata:{"formPropertyId":"70","formSelector":"[name*=\"form\"]","subjectIdentifiers":[{"name":"email","selector":"[name = \"email\"]","isPrimary":true},{"name":"first-name","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"last-name","selector":"[name = \"last-name\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"check1","selector":"[name = \"check1\"]","propertyId":6216,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"button"}},
-	    url: 'https://qa-stage.securiti.xyz/privaci/v1/',
-	    authToken:'13715a7e-d356-439c-bdf7-182857c85186',
-	    orgId:'1',
-	    onConsentSuccess: null,
-	    onConsentFailure: null
-	})
-    )</script>
-    
 </body>
-<!-- <script type="text/javascript" src="https://cdn-dev.securiti.xyz/consent/sdk-stub.js" defer></script> -->
+<script type="text/javascript" src="https://cdn-dev.securiti.xyz/consent/sdk-stub.js" defer></script>
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
-<!-- <script>
+<script>
 (function () {
 	var s = document.createElement('script');
 	s.src = 'https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk.js';
@@ -104,7 +87,7 @@
 })()
 </script>
 	<!-- You may style the button by overriding class "cmp-revoke-consent" -->
-<!-- <button class="cmp-revoke-consent">Revoke Consent</button> -->
+<button class="cmp-revoke-consent">Revoke Consent</button>
 <script>
     console.log('js enabled')
 </script>
