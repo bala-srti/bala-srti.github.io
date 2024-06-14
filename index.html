@@ -74,15 +74,16 @@
             <button name="btn" type="button">Submit</button>
         </p>
     </form>
+
 <script src='https://cdn-dev.securiti.xyz/consent/form-consent-sdk.js'></script>
 <script>window.addEventListener('load',
     FormConsentSDK.initialize({
-	codeGenMetadata:{"formPropertyId":"4","formSelector":"[name*=\"form\"]","subjectIdentifiers":[{"name":"email","selector":"[name = \"email\"]","isPrimary":true},{"name":"first-name","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"last-name","selector":"[name = \"last-name\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"check1","selector":"[name = \"check1\"]","propertyId":5086,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
-	url: 'https://dev.securiti.xyz/privaci/v1/',
-	authToken:'71979c3e-39ed-4743-b77b-949b0c800fe8',
-	orgId:'1',
-	onConsentSuccess: null,
-	onConsentFailure: null
+        codeGenMetadata:{"formPropertyId":"4","formSelector":"[name*=\"form\"]","subjectIdentifiers":[{"name":"email","selector":"[name = \"email\"]","isPrimary":true},{"name":"first-name","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"last-name","selector":"[name = \"last-name\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"check1","selector":"[name = \"check1\"]","propertyId":5087,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"[name = \"btn\"]"}},
+        url: 'https://dev.securiti.xyz/privaci/v1/',
+        authToken:'71979c3e-39ed-4743-b77b-949b0c800fe8',
+        orgId:'1',
+        onConsentSuccess: null,
+        onConsentFailure: null
     })
 )</script>
 	
