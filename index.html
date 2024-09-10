@@ -84,18 +84,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </form>
 	
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
-<script>
-(function () {
-	var s = document.createElement('script');
-	s.src = 'https://cdn-qa.securiti.xyz/consent/cookie-consent-sdk-loader.js';
-	s.setAttribute('data-tenant-uuid', '2dff0f1b-7fd3-4bfc-accb-5a008a1c3b69');
-	s.setAttribute('data-domain-uuid', '413a3a00-e1d2-494b-9d5c-8929b4c5c320');
-	s.setAttribute('data-backend-url', 'https://qa.securiti.xyz');
-	s.setAttribute('data-skip-css', 'false');
-	s.defer = true;
-	var parent_node = document.head || document.body;
-	parent_node.appendChild(s);
-})()
+
+<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+<script
+	defer
+	data-strict-csp
+	data-skip-css="false"
+	src="https://cdn-dev.securiti.xyz/consent/cookie-consent-sdk-loader-strict-csp.js"
+	data-tenant-uuid="6d53cd7f-0697-40e1-a98a-c66aa6d2e970"
+	data-domain-uuid="c4d5100e-c21f-4849-9581-eb4967f82d34"
+	data-backend-url="https://dev.securiti.xyz">
 </script>
     
 </body>
